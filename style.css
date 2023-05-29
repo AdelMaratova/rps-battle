@@ -31,3 +31,15 @@
     background-color: transparent;
     background-size: contain;
 }
+
+#start {
+    margin-top: 20px;
+    font-size: 25px;
+    background-color: greenyellow;
+    border: solid 1px;
+    padding: 15px;
+}
+
+#start:hover {
+    opacity: 0.6;
+}

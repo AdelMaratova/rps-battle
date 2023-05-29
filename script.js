@@ -1,4 +1,6 @@
-window.addEventListener('load', () => {
+let button = document.getElementById('start');
+
+window.addEventListener('click', button => {
     const quantity = Math.floor(Math.random() * 10) + 10;
     const container = document.getElementById('container');
     const objects = []; // Массив для хранения всех созданных объектов
@@ -59,14 +61,20 @@ window.addEventListener('load', () => {
                         if (currentClass == 'paper' && otherClass == 'rock') {
                             obj.classList.remove(otherClass);
                             obj.classList.add(currentClass);
+                            let audio = new Audio('sounds/paper.mp3');
+                            audio.play();
                         }
                         else if (currentClass == 'scissors' && otherClass == 'rock') {
                             element.classList.remove(currentClass);
                             element.classList.add(otherClass);
+                            let audio = new Audio('sounds/rock.mp3');
+                            audio.play();
                         }
                         else if (currentClass == 'scissors' && otherClass == 'paper') {
                             obj.classList.remove(otherClass);
                             obj.classList.add(currentClass);
+                            let audio = new Audio('sounds/scissors.mp3');
+                            audio.play();
                         }
 
                     }
