@@ -89,4 +89,5 @@ window.addEventListener('click', button => {
 
         moveElement();
     }
-});
+},
+    {once:true});
